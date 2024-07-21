@@ -1,0 +1,46 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 8% 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+
+}
+.logo{
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+.logo:hover{
+    transform: scale(0.9);
+}
+.logo span{
+    text-shadow: 0 0 25px #00ffee ;
+}
+.navbar a{
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition:  0.3s ease;
+    border-bottom: 3px solid transparent;
+   text-decoration: none;
+
+}
+.navbar a:hover, .navbar a.action{
+    color:  #00ffee;
+    border-bottom:  3px solid white;
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: white;
+    display: none ;
+}
