@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 8% 2rem;
+    padding: 2rem 8% 1.8rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
@@ -13,7 +13,8 @@
 
 }
 .logo{
-    font-size: 2rem;
+    text-decoration: none;
+    font-size: 2.3rem;
     color: white;
     font-weight: 800;
     cursor: pointer;
@@ -24,6 +25,7 @@
 }
 .logo span{
     text-shadow: 0 0 25px #00ffee ;
+    color: #00ffee;
 }
 .navbar a{
     font-size: 1.3rem;

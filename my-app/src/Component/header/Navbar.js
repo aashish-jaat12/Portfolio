@@ -1,11 +1,11 @@
 import React from 'react'
-import './header.css'
+import './navbar.css'
 
-function Header() {
+function Navbar() {
     return (
         <header className='header'>
-            <a href="" className='logo'>Ashish<span>Choudhary</span></a>
-<i className='bx bx-menu'id='menu-icon' ></i>
+            <a href="" className='logo'>Ashish<span>Choudhary</span></a>  
+<i className='bx bx-menu'id='menu-icon' >XX</i>
 
             <nav className='navbar'>
                 <a href="#" className='action'>home</a>
@@ -17,4 +17,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Navbar

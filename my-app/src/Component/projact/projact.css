@@ -1,0 +1,99 @@
+.projact{
+    background-color:#131313 ;
+    
+    
+}
+.projact a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.projact-box{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+   
+}
+.projact h2{
+    margin-bottom: 5rem;
+    font-size: 4rem;
+}
+ .projact-item img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 5%;
+    border: 3px solid #00ffee;
+    box-shadow: 0 0 25px #00ffee;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.projact-item{
+    cursor: pointer;
+    min-height: 500px;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(238, 238, 238, 0.2);
+    border-radius: 2rem;
+    margin: 0 1.5rem;
+    padding: 20px 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+    color: white;
+    transition: 0.4 ease-in-out;
+}
+.projact-item:hover{
+    border: 3px solid #00ffee;
+    transform: translate(-10px)scale(1.03);
+    box-shadow: 0 0 50px #00ffee;
+}
+.projact-item h3{
+    font-size:  2rem;margin: 1rem 0;
+}
+.projact-item p{
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.rating{
+    color: gold;
+    font-size: 2rem;
+}
+
+
+@media(max-width:895px){
+    .projact h2{
+        margin-bottom: 4rem;
+        font-size: 3rem;
+    }
+    .projact .wrapper{
+        grid-template-columns: repeat(1,1fr);
+      }
+      .projact-item img{
+        width: 25rem;
+        height: 25rem;
+       
+    }
+    .projact-item h3{
+        font-size:  3rem;
+        margin: 1rem 0;
+    }
+    .projact-item p{
+        font-size: 1.8rem;
+        color: white;
+    }
+}
