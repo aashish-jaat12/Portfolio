@@ -21,7 +21,7 @@ function Contact() {
     e.preventDefault();
     try {
       const responce = await axios.post(
-        "http://localhost:3000/api/contact",
+        "https://portfolio-backend-9fhf.onrender.com/api/contact",
         formdata
       );
       if (responce.data.success) {
