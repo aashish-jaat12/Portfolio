@@ -3,7 +3,7 @@ import "./navbar.css";
 
 function Navbar() {
   const [navlink, setnavlink] = useState("");
-  const [menuicon, setmenuicon] = useState(true);
+  const [menuicon, setmenuicon] = useState();
   return (
     <header className="header">
       <a href="#home" className="logo">
