@@ -3,7 +3,7 @@ import "./education.css";
 
 function Educations() {
   return (
-    <div className="education">
+    <div className="education" id="education" >
       <h3 className="heading"> Education</h3>
       <div className="timeline-items">
         <div className="timeline-item">

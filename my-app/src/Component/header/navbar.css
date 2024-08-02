@@ -46,3 +46,33 @@
     color: white;
     display: none ;
 }
+.icon{
+    cursor: pointer;
+}
+
+@media(max-width:895px){
+    #menu-icon{
+      display: block;
+    }
+  
+    .navbar{
+      position: absolute;
+      top:100%;
+      right: 0;
+      width: 50%;
+      padding: 1rem 5%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(20px);
+      border-bottom-left-radius: 2rem;
+      border-left: 2px solid #00ffee;
+      border-bottom: 2px solid #00ffee;
+      /* display: none; */
+    }
+   
+    .navbar a{
+      display: block;
+      font-size: 1.5rem;
+      margin: 3rem 0;
+      color: white;
+    }
+}

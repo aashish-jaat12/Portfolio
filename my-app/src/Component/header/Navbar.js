@@ -1,20 +1,60 @@
-import React from 'react'
-import './navbar.css'
+import React, { useState } from "react";
+import "./navbar.css";
 
 function Navbar() {
-    return (
-        <header className='header'>
-            <a href="" className='logo'>Ashish<span>Choudhary</span></a>  
-<i className='bx bx-menu'id='menu-icon' >XX</i>
-
-            <nav className='navbar'>
-                <a href="#" className='action'>home</a>
-                <a href="#" >Education</a>
-                <a href="#" >Services</a>
-                <a href="#" >Projact</a>
-                <a href="#" >Contact</a>
-            </nav> </header>
-    )
+  const [navlink, setnavlink] = useState("");
+  const [menuicon, setmenuicon] = useState(true);
+  return (
+    <header className="header">
+      <a href="#home" className="logo">
+        Ashish<span>Choudhary</span>
+      </a>
+      <div className="icon">
+        <i
+          className="bx bx-menu"
+          onClick={() => setmenuicon(!menuicon)}
+          id="menu-icon"
+        ></i>
+      </div>
+      <nav className="navbar" style={menuicon ? { display: "none" } : null}>
+        <a
+          href="#home"
+          className={navlink === "home" ? "action" : null}
+          onClick={() => setnavlink("home")}
+        >
+          home
+        </a>
+        <a
+          href="#education"
+          className={navlink === "Education" ? "action" : null}
+          onClick={() => setnavlink("Education")}
+        >
+          Education
+        </a>
+        <a
+          href="#services"
+          className={navlink === "Services" ? "action" : null}
+          onClick={() => setnavlink("Services")}
+        >
+          Services
+        </a>
+        <a
+          href="#projact"
+          className={navlink === "Projact" ? "action" : null}
+          onClick={() => setnavlink("Projact")}
+        >
+          Projact
+        </a>
+        <a
+          href="#Contact"
+          className={navlink === "Contact" ? "action" : null}
+          onClick={() => setnavlink("Contact")}
+        >
+          Contact
+        </a>
+      </nav>{" "}
+    </header>
+  );
 }
 
-export default Navbar
+export default Navbar;
