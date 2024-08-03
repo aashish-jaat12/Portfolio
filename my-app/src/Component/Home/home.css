@@ -1,6 +1,6 @@
 section{
     /* min-height: 100vh; */
-    padding: 5rem 8% 5rem;
+    padding: 5rem 4% 5rem;
 }
 .home{
     display: flex;
@@ -32,12 +32,12 @@ section{
 }
 .home-img{
     border-radius: 50%;
-    margin-top: 5rem;
+    margin-top: 4.5rem;
 }
 .home-img img{
     position: relative;
     /* margin-top: 2rem; */
-    width: 31vw;
+    width: 32vw;
     border-radius: 50%;
     box-shadow: 0 0 35px #00ffee, 0 0 35px #00ffee;;
     cursor: pointer;
