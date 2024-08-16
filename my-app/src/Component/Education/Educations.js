@@ -4,7 +4,7 @@ import "./education.css";
 function Educations() {
   return (
     <div className="education" id="education" >
-      <h3 className="heading"> Education</h3>
+      <h3 className="heading"> My Knowledge and Education</h3>
       <div className="timeline-items">
         <div className="timeline-item">
           <div className="timeline-dot"></div>

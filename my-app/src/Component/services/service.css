@@ -1,69 +1,55 @@
-.services{
-    background-color: #080808;
-    color: black;
-}
-.services h2{
-    margin-bottom: 4rem;
-    color: white;
-}
-.services-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap:3rem;
-}
-.services-box{
-    background-color: #00ffee;
-   /* min-height: 250px; */
-    height: 300px;
-    border-radius: 3rem;
-    border: 5px solid transparent;
-    cursor: pointer;
-    transition: 0.4 ease-in-out;
-}
-.services-box:hover{
-    background: white;
-    color: black;
-    border: 5px solid #00ffee;
-    transform: scale(1.03);
-}
-
-.services-box .services-info{
+.service{
     display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 0rem 3rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
 }
-.services-info h4{
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 2;
+.service h2{
+font-size: 3.5rem;
+margin :3rem  0 ;
 }
-.services-info p{
-    font-size: 1rem;
-    font-weight: 600;
-    max-height: 100px;
-    line-height: 1.4;
-    margin: auto;
-}
-/* bg #080808
-sec #131313
-mai #00ffee */
+.contaner{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 3rem;
 
-@media(max-width:895px){
-    .services-info p{
-        font-size: 1.3rem;
-        font-weight: 500;
-        line-height: 1.6;
-    }
-    .services .services-container{
-        grid-template-columns: repeat(1,1fr);
-      }
-      .services h2{
-        margin-bottom: 3rem;
-      }
-     
 }
+
+.iconContainers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+    justify-content: space-around;
+  }
+  .img{
+    background-color: aqua;
+    border: 2px solid #00ffee;
+    padding: 1rem;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600 ;
+    border-radius: 1rem;
+    transition: 0.4 ease-in-out;
+  }
+
+ .img:hover{
+    transform: translate(-7px)scale(1);
+    box-shadow: 0 0 25px #00ffee;
+}
+  .iconContainers  img{
+    /* margin: 3rem; */
+    width: 80px;
+    height: 80px;
+  }
+
+  @media(max-width: 600px){
+    .iconContainers{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 5rem;
+      justify-content: space-around;
+    }
+  }

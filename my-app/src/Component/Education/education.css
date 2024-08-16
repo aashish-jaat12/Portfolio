@@ -1,15 +1,15 @@
 .heading{
-font-size: 6rem;
+font-size: 3.7rem;
 text-align: center;
-margin: 2rem 0 ;
+margin: 1.5rem 0 ;
 }
 .education{
-    padding: 5px 15px;
+    padding: 1rem 15px 4rem;
     background: #131313;
 
 }
 .education h3{
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 .timeline-items{
     max-width: 1200px;

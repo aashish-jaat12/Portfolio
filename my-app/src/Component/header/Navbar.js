@@ -1,29 +1,30 @@
 import React, { useState } from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [navlink, setnavlink] = useState("");
   const [menuicon, setmenuicon] = useState();
   return (
     <header className="header">
-      <a href="#home" className="logo">
+      <Link to="/" className="logo">
         Ashish<span>Choudhary</span>
-      </a>
+      </Link>
       <div className="icon">
         <i
           className="bx bx-menu"
           onClick={() => setmenuicon(!menuicon)}
-          id="menu-icon"
+          id={"menu-icon"}
         ></i>
       </div>
       <nav className="navbar" style={menuicon ? { display: "none" } : null}>
-        <a
-          href="#home"
+        <Link
+          to="/"
           className={navlink === "home" ? "action" : null}
           onClick={() => setnavlink("home")}
         >
-          home
-        </a>
+          Home
+        </Link>
         <a
           href="#education"
           className={navlink === "Education" ? "action" : null}

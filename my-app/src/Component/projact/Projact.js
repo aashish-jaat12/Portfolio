@@ -1,16 +1,19 @@
 import React from "react";
 import "./projact.css";
+import js from "../assets/java-script.png";
+import react from "../assets/node-js.png";
+import css from "../assets/css-3.png";
 
 function Projact() {
   return (
     <section className="projact" id="projact" >
       <div className="projact-box">
-        <h2 className="hader">Projact and Experience</h2>
+        <h2 >Working Projact</h2>
 
         <div className="wrapper">
           <div className="projact-item">
             <a target="_blank" href="https://mern-food-app-frontend-r0yy.onrender.com/">
-              <img src="h1.png" />
+              <img src={react} />
               <h3>Food App</h3>
               <div className="rating">
                 <i className="bx bxs-star"></i>
@@ -31,8 +34,8 @@ function Projact() {
 
           <div className="projact-item">
             <a target="_blank" href="https://aashish-jaat12.github.io/Wynk/">
-              <img src="h2.png" />
-              <h3>Wynk App</h3>
+              <img src={js} />
+              <h3>Music App</h3>
               <div className="rating">
                 {" "}
                 <i className="bx bxs-star"></i>
@@ -48,8 +51,8 @@ function Projact() {
           </div>
           <div className="projact-item">
             <a target="_blank" href="https://aashish-jaat12.github.io/red-cars/">
-            <img src="h3.png" />
-            <h3>Car app</h3>
+            <img src={css} />
+            <h3>game app</h3>
             <div className="rating">
               {" "}
               <i className="bx bxs-star"></i>

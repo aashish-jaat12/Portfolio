@@ -1,12 +1,14 @@
 .contact{
     background-color: #080808;
+    text-align: center;
 }/* bg #080808
 sec #131313
 mai #00ffee */
 
 .contact h2{
-    margin-bottom: 3rem;
+    margin: 0;
     color: white;
+    font-size: 3.5rem;
 }
 .contact h2 span{
     color: #00ffee;

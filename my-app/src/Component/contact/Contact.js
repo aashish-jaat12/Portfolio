@@ -41,7 +41,7 @@ function Contact() {
 
   return (
     <section className="contact" id="Contact">
-      <h2 className="heading">
+      <h2 className="head">
         Contact <span>Me</span>
       </h2>
       <form onSubmit={submitdata}>
