@@ -14,7 +14,7 @@ body{
   color: white;
 }
 
-@media (max-width:1285px) {
+@media (max-width:1050px) {
  html{
   font-size: 55%;
  }  

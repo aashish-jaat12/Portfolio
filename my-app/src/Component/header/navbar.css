@@ -1,78 +1,124 @@
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 8% 1.8rem;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 5;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 8% 1.8rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+.logo {
+  text-decoration: none;
+  font-size: 2.3rem;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+.logo:hover {
+  transform: scale(0.9);
+}
+.logo span {
+  text-shadow: 0 0 25px #00ffee;
+  color: #00ffee;
+}
+.navbar a {
+  font-size: 1.3rem;
+  color: white;
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+}
+.navbar a:hover,
+.navbar a.action {
+  color: #00ffee;
+  border-bottom: 3px solid #00ffee;
+}
+#menu-icon {
+  font-size: 3.6rem;
+  color: white;
+  display: none;
+}
+.icon {
+  cursor: pointer;
+}
 
+.listbtn {
+  position: relative;
+  display: inline-block;
 }
-.logo{
-    text-decoration: none;
-    font-size: 2.3rem;
-    color: white;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.3 ease;
+.listbtn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: white;
 }
-.logo:hover{
-    transform: scale(0.9);
+.dropdown {
+  position: absolute;
+  width: 18vw;
+  top: 120%;
+  left: 0%;
+  background-color: black;
+  box-shadow: "0 8px 16px rgba(0,0,0,0.2)";
+  padding: 5px 14px;
+  border: 3px solid #00ffee;
+  border-radius: 0.5rem;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
 }
-.logo span{
-    text-shadow: 0 0 25px #00ffee ;
-    color: #00ffee;
-}
-.navbar a{
-    font-size: 1.3rem;
-    color: white;
-    margin-left: 2rem;
-    font-weight: 500;
-    transition:  0.3s ease;
-    border-bottom: 3px solid transparent;
-   text-decoration: none;
-
-}
-.navbar a:hover, .navbar a.action{
-    color:  #00ffee;
-    border-bottom:  3px solid white;
-}
-#menu-icon{
-    font-size: 3.6rem;
-    color: white;
-    display: none ;
-}
-.icon{
-    cursor: pointer;
+.dropdown li {
+  padding: 2px 0;
+  cursor: pointer;
+  color: white;
+  font-size: 1.4rem;
 }
 
-@media(max-width:895px){
-    #menu-icon{
-      display: block;
-    }
-  
-    .navbar{
-      position: absolute;
-      top:100%;
-      right: 0;
-      width: 50%;
-      padding: 1rem 5%;
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(20px);
-      border-bottom-left-radius: 2rem;
-      border-left: 2px solid #00ffee;
-      border-bottom: 2px solid #00ffee;
-      /* display: none; */
-    }
-   
-    .navbar a{
-      display: block;
-      font-size: 1.5rem;
-      margin: 3rem 0;
-      color: white;
-    }
+.dropdown li:hover {
+  color: #00ffee;
+  border-bottom: 3px solid #00ffee;
+}
+
+@media (max-width: 895px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 5%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid #00ffee;
+    border-bottom: 2px solid #00ffee;
+    /* display: none; */
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 1.7rem;
+    margin: 2.5rem 0;
+    color: white;
+  }
+  .dropdown {
+    width: 40vw;
+  }
+  .dropdown li {
+    font-size: 1.7rem;
+  }
+  .listbtn button {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
 }

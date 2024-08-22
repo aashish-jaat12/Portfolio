@@ -1,0 +1,20 @@
+.exprence{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 11rem;
+  height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .exprence{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 7rem;
+    height: 60vh;
+  }
+  
+}

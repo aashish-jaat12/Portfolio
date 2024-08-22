@@ -1,0 +1,264 @@
+
+.website-development {
+    background-image: url("../assets/web.avif"); /* Replace with the correct path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.content p {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.content button {
+    background-color: #FFC107;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0a806;
+}
+.website-development-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgba(10, 9, 9, 0.523);
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.highlight {
+    
+    color: white;
+    padding: 0 0;
+    border-radius: 5px;
+}
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #e5e2e2f6;
+    margin-bottom: 20px;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+
+.cost-of-website-development-container {
+    padding: 50px;
+    background-color: rgba(20, 19, 19, 0.87);
+    text-align: center;
+}
+
+.cost-of-website-development-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    /* color:#242B6D; */
+}
+
+.cost-of-website-development-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #b6b1b1de;
+    margin-bottom: 50px;
+}
+
+.cost-of-website-development-container .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #00ffee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card .icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.card  h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: black;
+   
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+.industries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .industry-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .industry-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+  }
+  
+  .industry-item .description {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .industry-item:hover {
+    transform: scale(1.05);
+  }
+  .hading-App h1{
+   
+    color: white;
+  }
+  .hading-App{
+    text-align: center;
+    color: white;
+  }
+  
+  .offerings-grid {
+    text-align: center;
+    padding: 40px;
+    background-color: #1c1b1b; /* Dark background */
+    color: #fff; /* White text */
+}
+
+.offerings-grid h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.offerings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.offering-card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+.offering-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.offering-card p {
+    font-size: 1em;
+    color: #bbb;
+}
+
+
+  @media (max-width: 895px) {
+    .website-development{
+        margin-top: 50px;
+        height: 70vh;
+    }
+    .content{
+ padding: 10px;
+    }
+   
+    .website-development-container{
+        display: block;
+       padding: 20px;
+    }
+    .text-content {
+        max-width: 100%;
+    }
+    .cost-of-website-development-container {
+        padding: 15px;
+        background-color: rgba(20, 19, 19, 0.87);
+        text-align: center;
+    }
+    
+    .cost-of-website-development-container .grid-container {
+     
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .card {
+        background-color: #00ffee;
+        padding: 0 10px ;
+    }
+    
+
+
+    .industries-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 10px;
+      }
+      .industry-item img {
+        height: auto;
+        
+      }
+}
+
+

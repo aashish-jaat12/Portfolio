@@ -13,8 +13,7 @@ function HomeComponent() {
         <Service/>
         <Projact/>
         <Contact/>
-
-    </>
+</>
   )
 }
 
