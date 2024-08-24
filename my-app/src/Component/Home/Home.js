@@ -18,7 +18,7 @@ function Home() {
             <div className="btn-group">
                 <a href="#Contact" className='btn' >Hire</a>
                 <a href="#Contact" className='btn' >Contact</a>
-                <a href="https://drive.google.com/file/d/1hPnwMV6mPZHPCU9y9hJrdRdpCfYD7cPb/view?usp=sharing" className='btn' >View CV</a>
+                <a href="https://drive.google.com/file/d/18GTTReCkUBaVdotEWlrkpZwL0n0Yokv6/view?usp=sharing" className='btn' >View CV</a>
             </div>
         </div>
             <div className="home-img">
