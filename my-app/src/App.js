@@ -14,9 +14,10 @@ import Exprence from "./Component/Exprence/Exprence";
 import AboutAs from "./Component/AboutAs/AboutAs";
 
 function App() {
+
   return (
     <>
-      <Router>
+     
         <Navbar />
         <ToastContainer />
 
@@ -29,7 +30,7 @@ function App() {
           <Route path="/AboutAs" element={<AboutAs/>} />
         </Routes>
         <Footer />
-      </Router>
+    
     </>
   );
 }

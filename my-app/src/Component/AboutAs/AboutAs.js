@@ -62,7 +62,7 @@ function AboutAs() {
           <a href="https://www.instagram.com/jaat_ashish001?igsh=MTBxNWR4eHUyOGZ3cQ==">
             <FaInstagram />
           </a>
-          <a href="https://dribbble.com">
+          <a href="https://portfolio-app-hz9n.onrender.comf">
             <FaDribbble />
           </a>
           <a href="https://wa.me/message/356ZNFGLQ6VRE1">

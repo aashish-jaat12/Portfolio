@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { Link ,useLocation} from "react-router-dom";
 
 function Navbar() {
-  const [navlink, setnavlink] = useState("");
-  const [menuicon, setmenuicon] = useState();
+  const [menuicon, setmenuicon] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation()
+  console.log(location.pathname)
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -17,7 +18,7 @@ function Navbar() {
       </Link>
       <div className="icon">
         <i
-          className="bx bx-menu"
+          className="bx bx-menu hamburger"
           onClick={() => setmenuicon(!menuicon)}
           id={"menu-icon"}
         ></i>
@@ -25,15 +26,15 @@ function Navbar() {
       <nav className="navbar" style={menuicon ? { display: "none" } : null}>
         <Link
           to="/"
-          className={navlink === "home"  ? "action" : null}
-          onClick={() => setnavlink("home")}
+          className={location.pathname === "/"  ? "action" : null}
+         
         >
           Home
         </Link>
 
         <a
-          className={navlink === "Services" ? "action" : null}
-          onClick={() => setnavlink("Services")}
+          className={location.pathname === "/webdevelipment" ||location.pathname === '/appdevelipment' || location.pathname === '/softweardevelipment' ? "action" : null}
+        
         >
           <div className="listbtn">
             <button onClick={toggleDropdown}>
@@ -43,14 +44,14 @@ function Navbar() {
             {isOpen && (
               <ul className="dropdown">
                 <Link to="/webdevelipment">
-                  <li>Website Development</li>
+                  <li onClick={toggleDropdown} >Website Development</li>
                 </Link>
                 <Link to="/appdevelipment">
-                  <li>App Development</li>{" "}
+                  <li onClick={toggleDropdown}>App Development</li>{" "}
                 </Link>
                 <Link to="/softweardevelipment">
                   {" "}
-                  <li>Softwear Development</li>{" "}
+                  <li onClick={toggleDropdown}>Softwear Development</li>{" "}
                 </Link>
               </ul>
             )}
@@ -58,15 +59,15 @@ function Navbar() {
         </a>
         <Link
           to="/exprence"
-          className={navlink === "Projact" ? "action" : null}
-          onClick={() => setnavlink("Projact")}
+          className={location.pathname === "/exprence" ? "action" : null}
+         
         >
           Achievements
         </Link>
         <Link
           to="/AboutAs"
-          className={navlink === "Contact" ? "action" : null}
-          onClick={() => setnavlink("Contact")}
+          className={location.pathname === "/AboutAs" ? "action" : null}
+       
         >
           Contact
         </Link>
