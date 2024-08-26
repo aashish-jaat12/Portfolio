@@ -9,6 +9,7 @@ import t1 from '../assets/T1.jpg'
 import t2 from '../assets/T2.jpg'
 import b1 from '../assets/B1.jpg'
 import webdesign from '../assets/webdesign.avif'
+import { Link } from 'react-router-dom';
 
 const Web = () => {
     const items = [
@@ -91,7 +92,7 @@ const industries = [
                     Crafting compelling websites tailored to your needs on our website development site. 
                     Our expert team ensures a seamless, user-friendly experience. Elevate your brand online with us.
                 </p>
-                <button>Contact Us</button>
+                <Link to='/AboutAs' ><button>Contact Us</button></Link> 
             </div>
         </div>
         <div className="website-development-container">

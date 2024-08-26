@@ -37,7 +37,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
+
 
 button:hover {
     background-color: #e0a806;

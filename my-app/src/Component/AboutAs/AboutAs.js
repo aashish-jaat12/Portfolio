@@ -50,11 +50,11 @@ function AboutAs() {
       <div className="profile-card">
         <img
           src={yourimg}
-          alt="Stefan Euchenhofer"
+          alt="Ashsih Choudhary"
           className="profile-image"
         />
         <h2>Ashish </h2>
-        <p>Programmierer, Designer, Technologie-Enthusiast und Unternehmer.</p>
+        <p>Programmierer, Designer, Web Developer and App Developer.</p>
         <div className="social-icons">
           <a href="https://www.linkedin.com/in/ashish-choudhary-24a917230">
             <FaLinkedin />

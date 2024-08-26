@@ -8,6 +8,7 @@ import ecomm from '../assets/e-comm.avif'
 import t1 from '../assets/T1.jpg'
 import t2 from '../assets/T2.jpg'
 import b1 from '../assets/B1.jpg'
+import { Link } from 'react-router-dom'
 
 function Apps() {
     const cardsData = [
@@ -72,7 +73,7 @@ function Apps() {
                 <p>
                 Explore cutting-edge trends and innovations shaping the landscape of mobile application development in our digital era.
                 </p>
-                <button>Contact Us</button>
+                <Link to='/AboutAs'><button>Contact Us</button></Link> 
             </div>
         </div>
         <div className="app-development-container">

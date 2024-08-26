@@ -72,7 +72,7 @@ function Footer() {
       </div>
       <div className="footer-bottom">
         <p>
-          © 2024 Copy right By: <Link to="/">Aashish Choudhary</Link>
+          © 2024 Developer By: <Link to="/">Aashish Choudhary</Link>
         </p>
       </div>
     </footer>

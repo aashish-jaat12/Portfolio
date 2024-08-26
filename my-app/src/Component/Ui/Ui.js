@@ -1,5 +1,6 @@
 import React from 'react'
 import './ui.css'
+import { Link } from 'react-router-dom';
 
 function Ui() {
 
@@ -53,7 +54,7 @@ const steps = [
               Software development involves designing, coding, testing, and maintaining programs
               to meet specific business or user needs.
             </p>
-            <button className="cta-button">Let's Discuss</button>
+          <Link to='/AboutAs'>  <button className="cta-button">Let's Discuss</button></Link>
           </div>
         </div>
 
