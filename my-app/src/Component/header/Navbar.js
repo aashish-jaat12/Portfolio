@@ -23,7 +23,7 @@ function Navbar() {
           id={"menu-icon"}
         ></i>
       </div>
-      <nav className="navbar" style={menuicon ? { display: "none" } : null}>
+      <nav className={menuicon ? "navbar mobile" : "navbar" }>
         <Link
           to="/"
           className={location.pathname === "/"  ? "action" : null}
