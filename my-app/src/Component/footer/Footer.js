@@ -3,7 +3,7 @@ import "./footer.css";
 import { Link } from "react-router-dom";
 
 function Footer() {
-  return (
+  return (  <>
     <footer className="footer">
       <div className="social">
         <p>Get connected with us on social networks:</p>
@@ -70,12 +70,8 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="footer-bottom">
-        <p>
-          © 2024 Developer By: <Link to="/">Aashish Choudhary</Link>
-        </p>
-      </div>
     </footer>
+    </>
   );
 }
 

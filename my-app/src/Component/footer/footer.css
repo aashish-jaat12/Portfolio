@@ -1,13 +1,18 @@
 
 .footer {
-    background-color: #222;
+    background-image: url(https://t4.ftcdn.net/jpg/02/07/15/43/240_F_207154340_wLIJus4m3SBl5sAQmpqN3Um7REnUhskU.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     padding: 20px 5px;
     text-align: center;
+    position: relative;
+    
   }
 
   
   .footer-container {
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -20,8 +25,7 @@
   .footer-section {
     flex: 1;
     margin:1rem;
-    min-width: 250px;
-    background-color: #222;
+ 
   }
   
   .footer-section h3 {

@@ -1,20 +1,146 @@
-.exprence{
-  display: flex;
+.exprences {
+  background-color: #131313;
+  margin-top: 7rem;
+  padding-top: 1rem;
+}
+.exprences a {
+  text-decoration: none;
+  color: white;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-size: 11rem;
-  height: 80vh;
 }
 
-@media (max-width: 768px) {
-  .exprence{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 7rem;
-    height: 60vh;
+.exprences-box {
+  /* background-size: cover; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.exprences h2 {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+.exprences-item img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+  border: 1px solid #3c3e3e;
+  /* box-shadow: 0 0 25px #00ffee; */
+  cursor: pointer;
+}
+
+.exprences-wrapper {
+  max-width: 40rem;
   }
+
+
+.exprences-item {
   
+  width: 80vw;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #5b5c5c;
+  border-radius: 2rem;
+  margin:  1.5rem 0;
+  padding: 20px 30px;
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+  color: white;
+  transition: 0.4 ease-in-out;
+  
+}
+
+.exprences-item h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.exprences-item p {
+  font-size: 1.1rem;
+  color: white;
+ 
+  text-decoration: none;
+}
+
+.gitcomponents{
+  background-color: rgb(28, 28, 28);
+  padding: 1rem;
+}
+.gitexprence{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gitexprence h2 {
+  margin: 1rem;
+  font-size: 3.5rem;
+}
+.gitexprences-item {
+  
+  width: 80vw;
+ 
+  
+  border-radius: 2rem;
+  margin:  1.5rem 0;
+  padding: 20px 30px;
+ border: 1px solid bisque;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+  color: white;
+  transition: 0.4 ease-in-out;
+  
+}
+.gitexprences-item h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.gitexprences-item p {
+  font-size: 1rem;
+  color: white;
+ 
+  text-decoration: none;
+}
+.gitexprences-wrapper {
+  max-width: 40rem;
+  }
+  .gitexprences-item img {
+    width: 28rem;
+    height: 28rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+@media (max-width: 768px) {
+ 
+  .exprences-item{
+flex-direction: column;
+  }
+  .gitexprences-item{
+    flex-direction: column;
+  }
 }

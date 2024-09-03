@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import whatapp from  '../src/Component/assets/WhatsApp.png'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +11,13 @@ root.render(
   <React.StrictMode>
     <Router>
     <App />
-  </Router>,
+    <div className='fixeds-bottom ' style={{zIndex: '6', left: 'initial'}} >
+      <a href='https://wa.me/message/356ZNFGLQ6VRE1 ' target='_blank'>
+    
+      <img src={whatapp} alt="help..." /></a>
+      
+        </div>
+  </Router>
   </React.StrictMode>
 );
 
