@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './home.css'
 
 function Home() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [img, setimg] = useState(false);
+  
+    const openPopup = () => setIsOpen(true);
+    const closePopup = () => setIsOpen(false);
   return (
     <section className='home' id='home'>
         <div className="home-content">
@@ -22,7 +27,18 @@ function Home() {
             </div>
         </div>
             <div className="home-img">
-                <img src="home11.jpg" alt="" />
+            <div>
+   {/* Modal popup */} <img src="home11.jpg" onClick={openPopup} alt="" />
+      {isOpen && (
+        <div className="modal" onClick={closePopup}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close" onClick={closePopup}>&times;</span>
+            <img src={'home11.jpg'} alt="Large view" className="modal-image" />
+          </div>
+        </div>
+      )}
+    </div>
+               
             </div>
     </section>
   )

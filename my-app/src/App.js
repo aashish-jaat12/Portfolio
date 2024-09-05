@@ -13,6 +13,8 @@ import Apps from "./Component/Appdevelipmeny/Apps";
 import Ui from "./Component/Ui/Ui";
 import Exprence from "./Component/Exprence/Exprence";
 import AboutAs from "./Component/AboutAs/AboutAs";
+import Popups from "./Component/Popup/Popups";
+
 
 function App() {
 
@@ -29,8 +31,8 @@ function App() {
           <Route path="/softweardevelipment" element={<Ui />} />
           <Route path="/exprence" element={<Exprence/>} />
           <Route path="/AboutAs" element={<AboutAs/>} />
-          
         </Routes>
+        <Popups/>
         <Footer />
         
     </>

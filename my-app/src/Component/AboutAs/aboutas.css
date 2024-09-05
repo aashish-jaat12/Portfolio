@@ -9,14 +9,13 @@
   
   .profile-card {
     background: white;
+    border: 2px solid #1ad0a9 ;
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  .profile-card:hover{
-    border: 2px solid #32e0dd;
-  }
+
   
   .profile-image {
     width: 150px;
@@ -60,14 +59,13 @@
   
   .contact-form {
     background: white;
+    border: 2px solid #1ad0a9 ;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    
   }
-  .contact-form:hover{
-    border: 2px solid #1ad0a9 ;
-  }
+
   
   .contact-form h2 {
     margin-bottom: 1rem;
