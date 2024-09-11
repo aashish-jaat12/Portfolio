@@ -71,6 +71,13 @@ function Navbar() {
         >
           Contact
         </Link>
+        <Link
+          to="/blog"
+          className={location.pathname === "/blog" ? "action" : null}
+       
+        >
+          Blogs
+        </Link>
       </nav>{" "}
     </header>
   );
