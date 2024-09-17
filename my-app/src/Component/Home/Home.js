@@ -12,7 +12,7 @@ function Home() {
         <div className="home-content">
             <h1>hii, Its <span>Ashish</span></h1>
             <h3 className='text-animation'>I'm a <span></span></h3>
-            <p>I am Ashish Choudhary. I am a web developer based in Jaipur. I have been doing web development since 2021 and have worked with various  library and framework. I help you to code your complex UI/UX designs and provide a full-stack solution from website creation to delivery. </p>
+            <p>I am Ashish Choudhary. I am a web developer based in Jaipur. I have been doing web development since 2021 and have worked with various  library and framework. I help you to code your complex Web designs and provide a full-stack solution from website creation to delivery. </p>
             <div className="social-icons">
                 <a target="_blank" href="https://www.linkedin.com/in/ashish-choudhary-24a917230"><i className="bx bxl-linkedin"></i>
                 </a>

@@ -1,10 +1,11 @@
 import Footer from "./Component/footer/Footer";
 import Navbar from "./Component/header/Navbar";
+import { useEffect } from "react";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import HomeComponent from "./Component/HomeComponent";
 import Web from "./Component/Webdevelipment/Web";
@@ -16,8 +17,15 @@ import Popups from "./Component/Popup/Popups";
 import Allblog from "./Bloges/Allblog/Allblog";
 import BlogHome from "./Bloges/blogScroler/BlogHome";
 import Collagelife from "./Bloges/Collagelifeblog/Collagelife";
+import WhyBCA from "./Bloges/WhyBCA/WhyBCA";
+import Web_developer from "./Bloges/webdeveloper/Web_developer";
 
 function App() {
+ const {pathname} = useLocation()
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[pathname])
   return (
     <>
       <Navbar />
@@ -31,6 +39,8 @@ function App() {
         <Route path="/AboutAs" element={<AboutAs />} />
         <Route path="/blog" element={<Allblog />} />
         <Route path="/Collage-Life-Blog" element={<Collagelife/>} />
+        <Route path="/Why-bca-202.." element={<WhyBCA/>} />
+        <Route path="/web-developer-2024" element={<Web_developer/>} />
       </Routes>
       <Popups />
       <BlogHome />

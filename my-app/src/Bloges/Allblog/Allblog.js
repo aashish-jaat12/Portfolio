@@ -16,13 +16,12 @@ function Allblog() {
             <div className="allblogtext">
               <h3>BCA Collage Life</h3>
               <p>
-                Explore the transformative impact of cutting-edge technologies
-                on payment systems, reshaping the future of financial
-                transactions.
+              College life is a unique chapter in every student's life, filled with learning, personal growth, and memorable experiences....
               </p>
             </div>
-            <Link to='/Collage-Life-Blog'>
-            <button className="view-articles-btn">View Articles</button></Link>
+            <Link to="/Collage-Life-Blog">
+              <button className="view-articles-btn">View Articles</button>
+            </Link>
           </div>
         </div>
         {/* Card 2 */}
@@ -35,11 +34,12 @@ function Allblog() {
             <div className="allblogtext">
               <h3>Why choose BCA</h3>
               <p>
-                In the digital realm, a harmonious UI/UX duo is essential for a
-                captivating user journey, shaping experiences.
+              In today's digital era, technology is at the forefront of innovation and growth, shaping the way businesses operate and individuals interact....
               </p>
             </div>
-            <button className="view-articles-btn">View Articles</button>
+            <Link to="/Why-bca-202..">
+              <button className="view-articles-btn">View Articles</button>
+            </Link>
           </div>
         </div>
 
@@ -53,12 +53,13 @@ function Allblog() {
             <div className="allblogtext">
               <h3>Web Developer in 2024</h3>
               <p>
-                MLM relies on a distributor network. A strategic compensation
-                plan is vital for financial success and sustained business
-                growth.
+              Web development has been a dynamic and ever-evolving field, shaping
+            the digital landscape and transforming how businesses ...
               </p>
             </div>
-            <button className="view-articles-btn">View Articles</button>
+            <Link to="/web-developer-2024">
+              <button className="view-articles-btn">View Articles</button>
+            </Link>
           </div>
         </div>
         {/* Card 4 */}

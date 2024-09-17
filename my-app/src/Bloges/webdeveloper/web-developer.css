@@ -1,0 +1,57 @@
+/* App.css */
+.web-202{
+    margin-top: 6rem;
+    width: 100%;
+}
+  .web-202-container {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
+    padding: 40px;
+    margin: auto;
+  }
+  
+  .web-202-header {
+    /* text-align: center; */
+    
+    max-width: 50%;
+    
+  }
+  
+  .web-202-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+   ;
+  }
+  
+  .web-202-header p {
+    font-size: 1.1em;
+    line-height: 1.6;
+   
+  }
+  
+
+  
+ 
+  
+  .web-202-image-section img {
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  @media (max-width: 895px) {
+    .web-202-container{
+        flex-direction: column;
+    }
+    .web-202-header {
+    
+        max-width: 100%;
+        
+      }
+  }
+  
